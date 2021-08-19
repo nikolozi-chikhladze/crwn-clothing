@@ -1,16 +1,8 @@
 import React from 'react';
-import './App.css';
-import HomePage from './pages/homepage/homepage.components.jsx';
 import { Switch, Route } from 'react-router-dom';
-
-
-const HatsPage = () => {
-  return (
-    <div>
-      <h1>Hats page</h1>
-    </div>
-  )
-}
+import HomePage from './pages/homepage/homepage.components.jsx';
+import './App.css';
+import ShopPage from './pages/shop/shop.component.jsx';
 
 function App() {
   return (
@@ -22,8 +14,8 @@ function App() {
           exact
         />
         <Route
-          path="/hats"
-          component={HatsPage}
+          path="/shop"
+          component={ShopPage}
         />
       </Switch>
     </div>
