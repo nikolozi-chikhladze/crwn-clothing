@@ -69,11 +69,12 @@ class App extends Component {
 }
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
+
 })
 
 const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
+  setCurrentUser: user => dispatch(setCurrentUser(user)),
 })
 
 
